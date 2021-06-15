@@ -1,15 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap');
 
+@import url('https://use.fontawesome.com/releases/v5.15.3/css/all.css');
+
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Baloo Tammudu 2', sans-serif;
+    list-style: none;
+    text-decoration: none;
 }
 
-aside.sidebar {
+body {
+    font-family: 'Baloo Tammudu 2', sans-serif;
+    overflow-x: hidden;
+}
+
+.sidebar {
     width: 350px;
-    height: 100%;
+    height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
@@ -17,6 +24,7 @@ aside.sidebar {
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: all .2s ease;
 }
 
 .sidebar .sidebar-header {
@@ -76,4 +84,67 @@ aside.sidebar {
 .sidebar-footer .social-icons a i:hover {
     text-shadow: 0 0 .7rem rgba(0, 0, 0, 0.3);
     color: #252525;
+}
+
+.sidebar-footer .contact-sidebar {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.contact-sidebar .contact-method {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-sidebar .contact-method i {
+    font-size: 1.9rem;
+    margin-right: 1rem;
+    color: #444444;
+}
+
+.contact-sidebar .contact-method i:hover {
+    color: #000;
+}
+
+.contact-sidebar .contact-method p {
+    font-size: 1.1rem;
+}
+
+.btn-menu {
+    border: 1px solid #4d4d4d;
+    color: #333333;
+    background-color: #fff;
+    font-size: 1rem;
+    padding: 1px 10px;
+    cursor: pointer;
+}
+
+#btn-close-menu {
+    position: absolute;
+    top: 10px;
+    left: 345px;
+}
+
+#btn-open-menu {
+    position: fixed;
+    top: 10px;
+}
+
+#content {
+    margin-left: 350px;
+    transition: all .1s ease;
+}
+
+.section-projects .section-header {
+    text-align: center;
+}
+
+.section-projects .section-header img {
+    width: 450px;
+    height: 40px;
 }
