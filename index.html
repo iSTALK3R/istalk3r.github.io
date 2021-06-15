@@ -11,59 +11,30 @@
 
 <body>
     <div class="container">
-        <button id="btn-open-menu" class="btn-menu" onclick="abrirMenu()"><i class="fas fa-caret-right"></i></button>
-        <aside class="sidebar" id="sidebar">
-            <div class="sidebar-header">
-                <div class="div-img-sidebar" id="img-cover">
-                    <img src="images/bg.jpg" alt="bg">
-                </div>
-                <div class="div-img-sidebar" id="img-profile">
-                    <img src="images/profile.jpg" alt="profile">
-                </div>
-                <button id="btn-close-menu" class="btn-menu" onclick="fecharMenu()"><i
-                        class="fas fa-caret-left"></i></button>
+        <header>
+            <div id="img-banner">
+                <img src="images/bg.jpg" alt="bg">
             </div>
-            <div class="sidebar-body">
-                <div class="myinfo">
-                    <h1>Alison Eduardo Gregorio</h1>
-                    <p>Web Developer & Software Engineer</p>
+            <div id="img-profile">
+                <img src="images/profile.jpg" alt="profile">
+            </div>
+            <div id="info">
+                <h1>Alison Eduardo Gregorio</h1>
+                <p>Web Developer & Software Engineer</p>
+                <div id="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-github-square"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
             </div>
-            <div class="sidebar-footer">
-                <div class="social-icons">
-                    <a href="https://www.instagram.com/alison_tedh/" target="_blank"><i
-                            class="fab fa-instagram"></i></a>
-                    <a href="https://github.com/iSTALK3R" target="_blank"><i class="fab fa-github-square"></i></a>
-                    <a href="https://www.linkedin.com/in/linkedalison/" target="_blank"><i
-                            class="fab fa-linkedin"></i></a>
-                </div>
-                <div class="contact-sidebar">
-                    <div class="contact-method">
-                        <i class="fab fa-whatsapp"></i>
-                        <p>(17) 99111-8565</p>
-                    </div>
-                    <div class="contact-method">
-                        <i class="far fa-envelope"></i>
-                        <p>gregorio.systech@gmail.com</p>
-                    </div>
-                </div>
+        </header>
+
+        <section class="knowledge" id="knowledge">
+            <div class="section-header">
+                <h1>Conhecimentos</h1>
+                <img src="images/line.png" alt="line">
             </div>
-        </aside>
-        <main id="content">
-            <section class="section-projects">
-                <div class="section-header">
-                    <h2>Projetos</h2>
-                    <img src="images/line.png" alt="line">
-                </div>
-                <div class="projects">
-                    <div class="card">
-                        <div class="card-img-wrapper">
-                            <img src="" alt="">
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
+        </section>
     </div>
 
     <script src="script.js"></script>

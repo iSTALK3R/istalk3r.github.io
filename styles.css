@@ -2,149 +2,110 @@
 
 @import url('https://use.fontawesome.com/releases/v5.15.3/css/all.css');
 
-* {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-}
-
 body {
     font-family: 'Baloo Tammudu 2', sans-serif;
-    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
-.sidebar {
-    width: 350px;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    box-shadow: 0 0 .6rem .1rem rgba(0, 0, 0, .3);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: all .2s ease;
+.container {
+    padding: 8px 150px;
 }
 
-.sidebar .sidebar-header {
+#img-banner img {
+    width: 100%;
+    height: 280px;
+    border-radius: 5px 5px 0 0;
     position: relative;
-    width: 100%;
+}
+
+#img-profile img {
+    width: 200px;
     height: 200px;
-}
-
-.sidebar-header .div-img-sidebar {
-    position: absolute;
-    width: 100%;
-}
-
-.sidebar-header #img-cover img {
-    width: 100%;
-    height: 160px;
-}
-
-.sidebar-header #img-profile img {
-    position: absolute;
-    top: 100px;
-    left: 110px;
-    border: 3px solid #c0c0c0;
+    border: 4px solid #fff;
     border-radius: 100%;
-    width: 130px;
-    height: 130px;
-}
-
-.sidebar-body .myinfo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 30px;
-}
-
-.sidebar-body .myinfo p {
-    font-size: 1.2rem;
-    text-shadow: 0 .3rem .7rem rgba(0, 0, 0, 0.3);
-}
-
-.sidebar-footer {
-    width: 100%;
-    margin-top: 20px;
-}
-
-.sidebar-footer .social-icons {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.sidebar-footer .social-icons a i {
-    font-size: 2rem;
-    color: #444444;
-    transition: all ease-in-out .1s;
-}
-
-.sidebar-footer .social-icons a i:hover {
-    text-shadow: 0 0 .7rem rgba(0, 0, 0, 0.3);
-    color: #252525;
-}
-
-.sidebar-footer .contact-sidebar {
-    display: flex;
-    flex-direction: column;
     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    margin-bottom: 1rem;
+    top: 180px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.contact-sidebar .contact-method {
-    display: flex;
-    justify-content: center;
+#info {
+    text-align: center;
+    margin-top: 80px;
 }
 
-.contact-sidebar .contact-method i {
-    font-size: 1.9rem;
-    margin-right: 1rem;
-    color: #444444;
+#info h1 {
+    margin: 0;
+    font-size: 2.2rem;
 }
 
-.contact-sidebar .contact-method i:hover {
+#info p {
+    margin: 0;
+    font-size: 1.3rem;
+    text-shadow: 0 .3rem 1rem rgba(0, 0, 0, .5);
+}
+
+#social-icons {
+    font-size: 2.1rem;
+    margin-top: 10px;
+}
+
+#social-icons a {
+    margin-right: 2rem;
+    color: #1d1d1d;
+}
+
+#social-icons a:last-child {
+    margin-right: 0;
+}
+
+#social-icons a:hover {
     color: #000;
 }
 
-.contact-sidebar .contact-method p {
-    font-size: 1.1rem;
-}
-
-.btn-menu {
-    border: 1px solid #4d4d4d;
-    color: #333333;
-    background-color: #fff;
-    font-size: 1rem;
-    padding: 1px 10px;
-    cursor: pointer;
-}
-
-#btn-close-menu {
-    position: absolute;
-    top: 10px;
-    left: 345px;
-}
-
-#btn-open-menu {
-    position: fixed;
-    top: 10px;
-}
-
-#content {
-    margin-left: 350px;
-    transition: all .1s ease;
-}
-
-.section-projects .section-header {
+.section-header {
     text-align: center;
+    margin-top: 60px;
 }
 
-.section-projects .section-header img {
-    width: 450px;
-    height: 40px;
+.section-header h1 {
+    margin-bottom: 0;
+    font-size: 1.8rem;
+}
+
+.section-header img {
+    width: 500px;
+    height: 30px;
+}
+
+@media screen and (max-width: 860px) {
+    .container {
+        padding: 8px 8px;
+    }
+
+    #img-banner img {
+        height: 180px;
+    }
+
+    #img-profile img {
+        width: 150px;
+        height: 150px;
+        top: 120px;
+    }
+
+    #info h1 {
+        font-size: 1.7rem;
+    }
+
+    #info p {
+        font-size: 1.1rem;
+    }
+
+    .section-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .section-header img {
+        width: 300px;
+    }
 }
