@@ -7,6 +7,8 @@ body {
     scroll-behavior: smooth;
 }
 
+/** Header area */
+
 .container {
     padding: 8px 150px;
 }
@@ -63,20 +65,107 @@ body {
     color: #000;
 }
 
+/** Knowledge area */
+
 .section-header {
     text-align: center;
-    margin-top: 60px;
-}
-
-.section-header h1 {
-    margin-bottom: 0;
-    font-size: 1.8rem;
+    margin-top: 30px;
 }
 
 .section-header img {
     width: 500px;
     height: 30px;
 }
+
+.section-body {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.technologies {
+    width: 400px;
+    padding: 15px;
+}
+
+.about {
+    width: 400px;
+    padding: 15px;
+}
+
+@keyframes load {
+    from {
+        width: 0%;
+    }
+}
+
+@-webkit-keyframes load {
+    from {
+        width: 0%;
+    }
+}
+
+@-moz-keyframes load {
+    from {
+        width: 0%;
+    }
+}
+
+@-o-keyframes load {
+    from {
+        width: 0%;
+    }
+}
+
+.technologies h1,
+.about h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.technologies ul {
+    list-style: none;
+}
+
+.technologies ul li h4 {
+    margin: 0;
+}
+
+.bar {
+    height: 15px;
+    margin-bottom: 15px;
+}
+
+.bar::before {
+    content: "";
+    background-color: royalblue;
+    display: inline-block;
+    padding: 8px;
+    border-radius: 10px;
+    animation: load 2s 0s;
+    -webkit-animation: load 2s 0s;
+    -moz-animation: load 2s 0s;
+    -o-animation: load 2s 0s;
+}
+
+.bar.bar1::before {
+    width: calc(80% - 10px);
+}
+
+.bar.bar2::before {
+    width: calc(45% - 10px);
+}
+
+.bar.bar3::before {
+    width: calc(30% - 10px);
+}
+
+.bar.bar4::before {
+    width: calc(55% - 10px);
+}
+
+/** Responsive area */
 
 @media screen and (max-width: 860px) {
     .container {
@@ -107,5 +196,18 @@ body {
 
     .section-header img {
         width: 280px;
+    }
+
+    .technologies {
+        width: 270px;
+    }
+
+    .technologies h1,
+    .about h1 {
+        font-size: 1.5rem;
+    }
+
+    .about p {
+        text-align: center;
     }
 }
