@@ -78,19 +78,21 @@ body {
 }
 
 .section-body {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-areas: 'l r';
+    grid-template-columns: 1fr 1fr;
 }
 
 .technologies {
     width: 400px;
     padding: 15px;
+    grid-area: l;
 }
 
 .about {
     width: 400px;
     padding: 15px;
+    grid-area: r;
 }
 
 @keyframes load {
@@ -190,6 +192,11 @@ body {
         font-size: 1.1rem;
     }
 
+    .section-body {
+        grid-template-areas: 'l' 'r';
+        grid-template-columns: 1fr;
+    }
+
     .section-header h1 {
         font-size: 1.5rem;
     }
@@ -198,16 +205,12 @@ body {
         width: 280px;
     }
 
-    .technologies {
-        width: 270px;
+    .technologies, .about {
+        width: 275px;
     }
 
     .technologies h1,
     .about h1 {
         font-size: 1.5rem;
-    }
-
-    .about p {
-        text-align: center;
     }
 }
