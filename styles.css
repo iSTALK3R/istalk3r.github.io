@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+
 @import url('https://use.fontawesome.com/releases/v5.15.3/css/all.css');
 
 body {
@@ -77,7 +79,7 @@ body {
     height: 30px;
 }
 
-.section-body {
+#knowledge-body {
     display: grid;
     grid-template-areas: 'l r';
     grid-template-columns: 1fr 1fr;
@@ -93,6 +95,11 @@ body {
     width: 400px;
     padding: 15px;
     grid-area: r;
+}
+
+.about p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1rem;
 }
 
 @keyframes load {
@@ -192,7 +199,7 @@ body {
         font-size: 1.1rem;
     }
 
-    .section-body {
+    #knowledge-body {
         grid-template-areas: 'l' 'r';
         grid-template-columns: 1fr;
     }
@@ -206,7 +213,7 @@ body {
     }
 
     .technologies, .about {
-        width: 275px;
+        width: 90%;
     }
 
     .technologies h1,
