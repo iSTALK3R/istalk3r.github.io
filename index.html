@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio para divulgar minhas habilidades, projetos e fazer orçamentos">
     <link rel="stylesheet" href="styles.css">
     <title>Portfólio - Alison Gregorio</title>
 </head>
@@ -85,13 +86,12 @@
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores hic unde nulla rem
                             nostrum
                         </p>
-                        <a href="https://github.com/iSTALK3R/ePoint" class="btn-project"><i
-                                class="fab fa-github-square"></i> Projeto</a>
+                        <a href="#" class="btn-project"><i class="fab fa-github-square"></i> Projeto</a>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-img-wrapper">
-                        <img src="images/proj2.jpg" alt="Imagem do projeto e-Point">
+                        <img src="images/proj2.jpg" alt="Imagem do projeto do Portfólio">
                     </div>
                     <div class="card-info">
                         <h2>Portfólio</h2>
@@ -105,7 +105,7 @@
                 </div>
                 <div class="card">
                     <div class="card-img-wrapper">
-                        <img src="images/proj3.jpg" alt="Imagem do projeto e-Point">
+                        <img src="images/proj3.jpg" alt="Imagem do projeto">
                     </div>
                     <div class="card-info">
                         <h2>Em Breve</h2>
@@ -119,6 +119,57 @@
                 </div>
             </div>
         </section>
+
+        <section class="orcamento">
+            <div class="section-header">
+                <img src="images/line.png" alt="line">
+                <h1>Faça um orçamento</h1>
+            </div>
+            <div class="section-body" id="orcamento-body">
+                <form>
+                    <label for="qtd-paginas">Quantas páginas precisa?</label>
+                    <input type="number" id="qtd-paginas" min="1">
+                    <label for="js">Precisa de um script JavaScript?</label>
+                    <div class="input-group">
+                        <input type="checkbox" id="js">
+                        <label for="js">Sim</label>
+                    </div>
+                    <label for="js">Layout</label>
+                    <div class="input-group">
+                        <div class="radio">
+                            <input type="radio" name="layout" id="layout-y">
+                            <label for="layout-y">Preciso que crie um layout</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="layout" id="layout-n">
+                            <label for="layout-n">Possuo o layout em mãos</label>
+                        </div>
+                    </div>
+                    <label for="prazo">Prazo para entrega</label>
+                    <input type="range" name="prazo" id="prazo" min="1" max="10">
+                    <label id="preco">Preço: R$ 0,00</label>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <div class="section-header">
+                <img src="images/line.png" alt="line">
+            </div>
+            <div class="contact">
+                <div class="m-contact">
+                    <p><i class="fab fa-whatsapp"></i> (17) 9 9111-8565</p>
+                </div>
+                <div class="m-contact">
+                    <p><i class="fas fa-envelope"></i> gregorio.systech@gmail.com</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright &copy; 2021 - Alison Gregorio</p>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
     </div>
 </body>
 
