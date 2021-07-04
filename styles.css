@@ -509,6 +509,16 @@ input[type=range]:focus::-ms-fill-upper {
     box-shadow: 0 0 1rem .1rem rgba(0, 0, 0, .1);
 }
 
+.btn-enviar {
+    color: #fff;
+    background-color: #0084ff;
+    padding: .7rem 0;
+}
+
+.btn-enviar:hover {
+    background: linear-gradient(to right, #0084ff, #00c3ff);
+}
+
 /** Footer area */
 
 footer {
