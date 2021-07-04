@@ -289,7 +289,7 @@ section {
     justify-content: center;
 }
 
-form {
+.orcamento form {
     width: 75%;
     padding: 1rem;
     padding-bottom: 2.5rem;
@@ -300,11 +300,11 @@ form {
     row-gap: 2rem;
 }
 
-form label {
+.orcamento form label {
     font-size: 1.2rem;
 }
 
-form:hover {
+.orcamento form:hover {
     box-shadow: 0 0 1rem .50rem rgba(0, 0, 0, .1);
 }
 
@@ -468,6 +468,47 @@ input[type=range]:focus::-ms-fill-upper {
     background: linear-gradient(to right, #00aeff, #0084ff);
 }
 
+/** Contact area */
+
+#contact-body {
+    display: flex;
+    justify-content: center;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .form-group {
+    position: relative;
+}
+
+.contact .form-group input, textarea {
+    width: 500px;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    padding: .7rem 3.2rem;
+    outline: none;
+    border: 1px solid #868686;
+    border-radius: .3rem;
+    transition: all ease-in-out .2s;
+}
+
+.contact .form-group label {
+    font-size: 1.5rem;
+    color: #3b3b3b;
+    position: absolute;
+    top: 1.4px;
+    left: 15px;
+    z-index: 1;
+}
+
+.contact input:focus, .contact textarea:focus {
+    border-color: #0084ff;
+    box-shadow: 0 0 1rem .1rem rgba(0, 0, 0, .1);
+}
+
 /** Footer area */
 
 footer {
@@ -477,7 +518,7 @@ footer {
     text-align: center;
 }
 
-.contact {
+.contact-info {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -498,7 +539,7 @@ footer {
 
 /** Responsive area */
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 1190px) {
     .container {
         padding: 8px 15px;
     }
@@ -554,15 +595,29 @@ footer {
     .card:last-child {
         margin-bottom: 0;
     }
+
+    .contact .form-group input, textarea {
+        width: 300px;
+    }
 }
 
 @media screen and (max-width: 760px) {
-    form {
+    .orcamento form {
         width: 100%;
         grid-template-columns: 1fr;
     }
 
     .btn-orcamento {
         padding: .50rem 0;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .contact .form-group input, textarea {
+        width: 180px;
+    }
+
+    footer .m-contact i {
+        display: none;
     }
 }
