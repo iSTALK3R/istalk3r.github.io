@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio para divulgar minhas habilidades, projetos e fazer orçamentos">
+    <link rel="stylesheet" href="styles.css">
+    <title>Portfólio - Alison Gregorio</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div id="img-banner">
+                <img src="images/bg.jpg" alt="bg">
+            </div>
+            <div id="img-profile">
+                <img src="images/profile.jpg" alt="profile">
+            </div>
+            <div id="info">
+                <h1>Alison Eduardo Gregorio</h1>
+                <p>Web Developer & Mobile Developer</p>
+                <div id="social-icons">
+                    <a href="https://www.instagram.com/alison_tedh/" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/iSTALK3R/" target="_blank"><i class="fab fa-github-square"></i></a>
+                    <a href="https://www.linkedin.com/in/linkedalison/" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </header>
+
+        <section class="knowledge">
+            <div class="section-header">
+                <img src="images/line.png" alt="line">
+            </div>
+            <div class="section-body" id="knowledge-body">
+                <div class="technologies">
+                    <h1>Minhas Habilidades</h1>
+                    <ul>
+                        <li>
+                            <h4>HTML (85%)</h4>
+                            <span class="bar bar1"></span>
+                        </li>
+                        <li>
+                            <h4>CSS (50%)</h4>
+                            <span class="bar bar2"></span>
+                        </li>
+                        <li>
+                            <h4>JavaScript (40%)</h4>
+                            <span class="bar bar3"></span>
+                        </li>
+                        <li>
+                            <h4>PHP (60%)</h4>
+                            <span class="bar bar4"></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="about">
+                    <h1>Sobre mim</h1>
+                    <p>
+                        Olá! Meu nome é Alison Gregorio, 23 anos, 
+                        sou técnico formado em Desenvolvimento de Sistemas, 
+                        apaixonado por tecnologia e hoje trabalho 
+                        principalmente com Desenvolvimento Web e Desenvolvimento de Aplicativos
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects">
+            <div class="section-header">
+                <img src="images/line.png" alt="line">
+                <h1>Meus Projetos</h1>
+            </div>
+            <div class="section-body" id="projects-body">
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="images/proj1.png" alt="Imagem do projeto e-Ponto">
+                    </div>
+                    <div class="card-info">
+                        <h2>e-Ponto</h2>
+                        <h3>PHP</h3>
+                        <p>
+                            Sistema web para registrar horários de entrada e saída de funcionários
+                        </p>
+                        <a href="#" class="btn-project"><i class="fab fa-github-square"></i> Projeto</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="images/proj2.png" alt="Imagem do projeto do Portfólio">
+                    </div>
+                    <div class="card-info">
+                        <h2>Portfólio</h2>
+                        <h3>HTML, CSS</h3>
+                        <p>
+                            Um portfólio com design simples, responsivo, criado para demonstrar minhas habilidades e
+                            prospectar futuros serviços!
+                        </p>
+                        <a href="#" class="btn-project"><i class="fab fa-github-square"></i> Projeto</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="images/proj3.jpg" alt="Imagem do projeto">
+                    </div>
+                    <div class="card-info">
+                        <h2>Em Breve</h2>
+                        <h3>...</h3>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores hic unde nulla rem
+                            nostrum
+                        </p>
+                        <a href="#" class="btn-project"><i class="fab fa-github-square"></i> Projeto</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="orcamento">
+            <div class="section-header">
+                <img src="images/line.png" alt="line">
+                <h1>Faça um orçamento</h1>
+            </div>
+            <div class="section-body" id="orcamento-body">
+                <form>
+                    <label for="qtd-paginas">Quantas páginas precisa?</label>
+                    <input type="number" id="qtd-paginas" min="1" value="1">
+                    <label for="js">Precisa de um script JavaScript?</label>
+                    <div class="input-group">
+                        <input type="checkbox" id="js">
+                        <label for="js">Sim</label>
+                    </div>
+                    <label for="js">Layout</label>
+                    <div class="input-group">
+                        <div class="radio">
+                            <input type="radio" name="layout" id="layout-y">
+                            <label for="layout-y">Preciso que crie um layout</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="layout" id="layout-n">
+                            <label for="layout-n">Possuo o layout em mãos</label>
+                        </div>
+                    </div>
+                    <label for="prazo">Prazo para entrega</label>
+                    <input type="range" name="prazo" id="prazo" min="1" max="10">
+                    <label id="preco">Preço: R$ 0,00</label>
+                    <button type="submit" class="btn btn-orcamento" disabled>Enviar</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="section-header">
+                <img src="images/line.png" alt="line">
+                <h1>Contato</h1>
+            </div>
+            <div class="section-body" id="contact-body">
+                <form action="">
+                    <div class="form-group">
+                        <input type="text" name="name" id="name" placeholder="Seu nome.." disabled>
+                        <label for="name"><i class="fas fa-user"></i></label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="email" id="email" placeholder="Seu email.." disabled>
+                        <label for="email"><i class="fas fa-envelope"></i></label>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" rows="10" id="message" placeholder="Sua mensagem.." disabled></textarea>
+                        <label for="message"><i class="fas fa-comment-dots"></i></label>
+                    </div>
+                    <button type="submit" class="btn btn-enviar">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <div class="contact-info">
+                <div class="m-contact">
+                    <p><i class="fab fa-whatsapp"></i> (17) 99111-8565</p>
+                </div>
+                <div class="m-contact">
+                    <p><i class="fas fa-envelope"></i> gregorio.systech@gmail.com</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright &copy; 2023 | Todos os direitos reservados by Alison Gregorio</p>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </div>
+</body>
+
+</html>
